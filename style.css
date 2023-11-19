@@ -1,0 +1,82 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  /* box-sizing: border-box; */
+  font-family: Arial;
+}
+
+.contenedor-tarjetas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 15vh;
+  min-width: 500px;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 35vh;
+  height: 50vh;
+  min-width: 250px;
+  min-height: 350px;
+  border: 1px black solid;
+  background-color: #4caf50;
+  border-radius: 5px;
+}
+
+.tarjeta-resultado {
+  justify-content: center;
+  align-items: start;
+  padding-left: 0vh;
+  background-color: whitesmoke;
+  border: none;
+}
+
+.tarjeta-cantidad {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.tarjeta-precio {
+  display: flex;
+  flex-direction: row;
+}
+
+.precio-resultado {
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+}
+
+p {
+  color: whitesmoke;
+}
+
+img {
+  width: 150px;
+}
+
+button {
+  font-size: 1.3rem;
+  background-color: orange; /* Green */
+  width: 30px;
+  height: 30px;
+}
+
+@media ((min-width: 300px) and (max-width: 577px)) {
+  .contenedor-tarjetas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 15vh;
+  }
+  .tarjeta-resultado {
+    justify-content: flex-start;
+    padding-top: 20px;
+  }
+}

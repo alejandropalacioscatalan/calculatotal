@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="contenedor-tarjetas">
+      <div class="tarjeta">
+        <img src="./notebook.png" alt="" />
+        <p>Laptop Gamer AMD</p>
+        <div class="tarjeta-precio">
+          <p>Precio Base: $&nbsp;</p>
+          <p class="precio-base">400000</p>
+        </div>
+        <div class="tarjeta-cantidad">
+          <p>Cantidad:</p>
+          <p class="cantidad">1</p>
+          <button onclick="multiplicar_mas()">+</button>
+          <button onclick="multiplicar_menos()">-</button>
+        </div>
+      </div>
+      <div class="tarjeta tarjeta-resultado">
+        <div class="precio-resultado">
+          <h3>Total a Pagar:</h3>
+        </div>
+        <br />
+        <div class="precio-resultado">
+          <h3>$&nbsp;</h3>
+          <h3 class="resultado">400000</h3>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
